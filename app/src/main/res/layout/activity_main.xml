@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:id="@+id/m_header"
+            android:text="Comixion"
+            android:textColor="#000000"
+            fontPath="fonts/Code-Pro-Bold.otf"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:padding="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="INACTIVE"
+                fontPath="fonts/Montserrat-ExtraBold.otf"
+                android:id="@+id/active_btn"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Categories"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            fontPath="fonts/Montserrat-ExtraBold.otf"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <HorizontalScrollView
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/cat_part"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Configuration"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            fontPath="fonts/Montserrat-ExtraBold.otf"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:id="@+id/rndm"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Random"
+            fontPath="fonts/Montserrat-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:id="@+id/time_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/time_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                fontPath="fonts/Montserrat-SemiBold.otf"
+                tools:ignore="MissingPrefix"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/num_timey"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                fontPath="fonts/Montserrat-SemiBold.otf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/timey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:id="@+id/unlck_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                fontPath="fonts/Montserrat-SemiBold.otf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/unlck_cb"
+                android:text="Change wallpaper on unlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <CheckBox
+            android:id="@+id/spec"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Specific"
+            fontPath="fonts/Montserrat-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Effects on.."
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            fontPath="fonts/Montserrat-ExtraBold.otf"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:id="@+id/hhome"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Home Screen"
+            fontPath="fonts/Montserrat-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <CheckBox
+            android:id="@+id/llock"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Lock Screen"
+            fontPath="fonts/Montserrat-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+        <CheckBox
+            android:id="@+id/handl"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Home and Lock Screen"
+            fontPath="fonts/Montserrat-Bold.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
